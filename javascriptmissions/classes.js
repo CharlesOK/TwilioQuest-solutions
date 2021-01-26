@@ -8,7 +8,7 @@ class Materializer {
     this.activated = true;
   }
   materialize() {
-    if (this.activated === true) {
+    if (this.activate) {
       return this.target;
     } else {
       return undefined;
