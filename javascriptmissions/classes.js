@@ -17,9 +17,9 @@ class Materializer {
 }
 
 const m = new Materializer("Kevin");
-console.log(m.activated); // would print "false"
+console.log(m.activated);
 
-//m.activate();
-console.log(m.activated); // would print "true"
+m.activate();
+console.log(m.activated);
 
-console.log(m.materialize()); // would print "Kevin"
+console.log(m.materialize());
