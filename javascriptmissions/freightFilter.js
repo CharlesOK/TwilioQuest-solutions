@@ -1,5 +1,5 @@
 function scanAndFilter(items, contents) {
-  let filtered = items.filter((word) => word != contents);
+  let filtered = items.filter((word) => word !== contents);
   return filtered;
 }
 
