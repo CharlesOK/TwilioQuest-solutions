@@ -4,7 +4,6 @@ function getFirstAmountSorted(inputArray, num) {
   return targetValue;
 }
 
-/*console.log(
+console.log(
   getFirstAmountSorted(["cheerios", "apple jacks", "lucky charms"], 3)
 );
-*/
