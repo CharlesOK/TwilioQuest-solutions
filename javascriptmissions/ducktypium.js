@@ -3,7 +3,7 @@ class Ducktypium {
     this.validColor = ["red", "blue", "yellow"];
 
     if (!this.validColor.includes(color)) {
-      throw "Halt! Color must be red, blue or yellow.";
+      throw new Error("Halt! Color must be red, blue or yellow.");
     }
     this.color = color;
     this.calibrationSequence = [];
@@ -11,7 +11,7 @@ class Ducktypium {
 
   refract(colors) {
     if (!this.validColor.includes(colors)) {
-      throw "Halt! Color must be red, blue or yellow";
+      throw new Error("Halt! Color must be red, blue or yellow");
     }
     if (colors === this.color) {
       return colors;
@@ -47,14 +47,13 @@ try {
   console.error(e);
 }
 
-// Create a new instance of the class
 const dt = new Ducktypium("red");
 
-console.log(dt.color); // prints 'red'
+console.log(dt.color);
 
-console.log(dt.refract("blue")); // prints 'purple'
-console.log(dt.refract("red")); // prints 'red'
+console.log(dt.refract("blue"));
+console.log(dt.refract("red"));
 
 dt.calibrate([3, 5, 1]);
 
-console.log(dt.calibrationSequence); // prints [3, 9, 15]
+console.log(dt.calibrationSequence);
