@@ -2,7 +2,7 @@ function scan(stringArray) {
   let contraband = 0;
   stringArray.forEach((value) => {
     if (value === "contraband") {
-      contraband = contraband += 1;
+      contraband += 1;
     }
   });
   return contraband;
